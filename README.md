@@ -11,3 +11,5 @@ Python script, written in Python 3.5, uses matplotlib.
 Has functions for calculating individual intensities of blackbody radiation for some wavelength and temperature, or plotting intensities over some wavelength range for a temperature.
 
 **Methods.cs:** Miscellaneous methods made in C# for fun or as exercises.
+
+**NumberGuessingGame.py:** The computer tries to guess the number you are thinking of. Default number range is 1 to 100.
