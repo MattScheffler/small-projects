@@ -1,4 +1,4 @@
-#A collection of functions from the completing the exercises at http://www.practicepython.org/
+#A collection of functions from completing the exercises at http://www.practicepython.org/
 #Not all exercises are done here, and the number doesn't always corrospond to the exercise.
 
 import random
