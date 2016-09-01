@@ -12,4 +12,6 @@ A basic converter for Kelvin/Celsius/Farenheit temperature scales. Has two optio
 
 **ExerciseCollection.py:** Solutions to some practice problems, all put into functions. 
 
-**FilenameChanger:** C# console app, .NET 4.5, changes all filenames in a folder to numbers starting from the user input and incrementing by 1 for every file.
+**FilenameChanger:** C# console app, .NET 4.5, changes all filenames in a folder to numbers (or filename+numbers) starting from the user input and incrementing by 1 for every file.
+
+**NoteWriter:** Windows forms application, .NET 4.5, simple text document writer. Supports plain and rich text formats. 
