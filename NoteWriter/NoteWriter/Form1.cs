@@ -13,6 +13,7 @@ namespace NoteWriter
 {
     public partial class Form1 : Form
     {
+        //Globals used in the window grag code
         private bool mouseDown;
         private Point location;
 
@@ -21,12 +22,14 @@ namespace NoteWriter
             InitializeComponent();
         }
 
+        //Start font change button events
         private void buttonItalic_Click(object sender, EventArgs e)
         {
             if (richTextBox.SelectionFont.Italic)
                 richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, FontStyle.Regular);
             else
                 richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, FontStyle.Italic);
+            richTextBox.Focus();
         }
 
         private void buttonBold_Click(object sender, EventArgs e)
@@ -35,6 +38,7 @@ namespace NoteWriter
                 richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, FontStyle.Regular);
             else
                 richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, FontStyle.Bold);
+            richTextBox.Focus();
         }
 
         private void buttonBoldItalic_Click(object sender, EventArgs e)
@@ -43,8 +47,29 @@ namespace NoteWriter
                 richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, FontStyle.Regular);
             else
                 richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, FontStyle.Bold | FontStyle.Italic);
+            richTextBox.Focus();
         }
 
+        private void buttonUnderline_Click(object sender, EventArgs e)
+        {
+            if (richTextBox.SelectionFont.Underline)
+                richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, FontStyle.Regular);
+            else
+                richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, FontStyle.Underline);
+            richTextBox.Focus();
+        }
+
+        private void buttonStrikeout_Click(object sender, EventArgs e)
+        {
+            if (richTextBox.SelectionFont.Strikeout)
+                richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, FontStyle.Regular);
+            else
+                richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, FontStyle.Strikeout);
+            richTextBox.Focus();
+        }
+        //End font change button events
+
+        //Start top right buttons
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -54,6 +79,7 @@ namespace NoteWriter
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        //End top right buttons
 
         //Start of window drag code, moves the window if blank space in the top menu is clicked down
         private void menuStrip_MouseDown(object sender, MouseEventArgs e)
@@ -77,6 +103,7 @@ namespace NoteWriter
         }
         //End of window drag code
 
+        //Start file menu buttons
         private void newToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             labelFilename.Text = String.Empty;
@@ -129,5 +156,6 @@ namespace NoteWriter
         {
             this.Close();
         }
+        //End file menu buttons
     }
 }

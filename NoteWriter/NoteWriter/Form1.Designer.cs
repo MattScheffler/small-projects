@@ -44,6 +44,8 @@
             this.buttonBoldItalic = new System.Windows.Forms.Button();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.labelFilename = new System.Windows.Forms.Label();
+            this.buttonUnderline = new System.Windows.Forms.Button();
+            this.buttonStrikeout = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,7 +176,7 @@
             // buttonBoldItalic
             // 
             this.buttonBoldItalic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBoldItalic.Location = new System.Drawing.Point(202, 685);
+            this.buttonBoldItalic.Location = new System.Drawing.Point(201, 685);
             this.buttonBoldItalic.Name = "buttonBoldItalic";
             this.buttonBoldItalic.Size = new System.Drawing.Size(76, 25);
             this.buttonBoldItalic.TabIndex = 6;
@@ -197,13 +199,37 @@
             this.labelFilename.TabIndex = 7;
             this.labelFilename.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // buttonUnderline
+            // 
+            this.buttonUnderline.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUnderline.Location = new System.Drawing.Point(279, 685);
+            this.buttonUnderline.Name = "buttonUnderline";
+            this.buttonUnderline.Size = new System.Drawing.Size(76, 25);
+            this.buttonUnderline.TabIndex = 8;
+            this.buttonUnderline.Text = "Underline";
+            this.buttonUnderline.UseVisualStyleBackColor = true;
+            this.buttonUnderline.Click += new System.EventHandler(this.buttonUnderline_Click);
+            // 
+            // buttonStrikeout
+            // 
+            this.buttonStrikeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonStrikeout.Location = new System.Drawing.Point(358, 685);
+            this.buttonStrikeout.Name = "buttonStrikeout";
+            this.buttonStrikeout.Size = new System.Drawing.Size(76, 25);
+            this.buttonStrikeout.TabIndex = 9;
+            this.buttonStrikeout.Text = "Strikeout";
+            this.buttonStrikeout.UseVisualStyleBackColor = true;
+            this.buttonStrikeout.Click += new System.EventHandler(this.buttonStrikeout_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackgroundImage = global::NoteWriter.Properties.Resources.NoteWriterPicture;
+            this.BackgroundImage = global::NoteWriter.Properties.Resources.NoteWriterPicture2;
             this.ClientSize = new System.Drawing.Size(982, 734);
+            this.Controls.Add(this.buttonStrikeout);
+            this.Controls.Add(this.buttonUnderline);
             this.Controls.Add(this.labelFilename);
             this.Controls.Add(this.buttonBoldItalic);
             this.Controls.Add(this.buttonMinimize);
@@ -243,6 +269,8 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.Label labelFilename;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Button buttonUnderline;
+        private System.Windows.Forms.Button buttonStrikeout;
     }
 }
 

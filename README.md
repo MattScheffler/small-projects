@@ -14,4 +14,4 @@ A basic converter for Kelvin/Celsius/Farenheit temperature scales. Has two optio
 
 **FilenameChanger:** C# console app, .NET 4.5, changes all filenames in a folder to numbers (or filename+numbers) starting from the user input and incrementing by 1 for every file.
 
-**NoteWriter:** Windows forms application, .NET 4.5, simple text document writer. Supports plain and rich text formats. 
+**NoteWriter:** Windows forms application, .NET 4.5, simple text document writer. Supports plain and rich text formats. Currently only accepts documents written in this program.
