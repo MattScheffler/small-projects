@@ -8,3 +8,4 @@ A brief description of each item will be given here.
 
 **ExerciseCollection.py:** Solutions to some practice problems, all put into functions. 
 
+**Telescopes:** the start of a C++ project for "observing" with different telescope types.
