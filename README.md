@@ -9,3 +9,5 @@ A brief description of each item will be given here.
 **ExerciseCollection.py:** Solutions to some practice problems, all put into functions. 
 
 **Telescopes:** the start of a C++ project for "observing" with different telescope types.
+
+**BinaryConverter:** Converts a positive base 10 integer to binary, with Python and C++ versions. Might add in some bitwise operators eventually.
